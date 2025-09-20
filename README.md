@@ -1,23 +1,17 @@
-class ubin:
-      def __init__(self):
-           self.balance=0
-           print("welcome to UBIN")
-      def deposit(self):
-          amount=float(input("enter amount to be deposited:"))
-          self.balance+=amount
-          print("\n Deposited amount :",amount)
-      def withdraw(self):
-          amount=float(input("enter amount to be withdrawn:"))
-          if self.balance>=amount:
-              self.balance-=amount
-              print("\n withdraw :",amount)
-          else:
-              print("\n Insufficient balance")
-      def checkbal(self):
-          print("\n Net available balance:",self.balance)
-#driver code
-p=ubin()
-p.deposit()
-p.withdraw()
-p.checkbal
-     
+class employee1():
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+class childemployee(employee1):
+    def __init__(self,name,age,salary,id):
+        self.name=name
+        self.age=age
+        self.salary=salary
+        self.id=id
+emp1=employee1('Praveen','19','200')
+print(emp1.age);
+print(emp1.name);
+print(emp1.salary);
+        
