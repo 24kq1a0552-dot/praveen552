@@ -1,0 +1,19 @@
+class cseA():
+    def __init__(self,name,age,rollno):
+        self.name=name
+        self.age=age
+        self.rollno=rollno
+class cseB():
+    def __init__(self,name,age,rollno):
+        self.name=name
+        self.age=age
+        self.rollno=rollno
+cseA=cseA('\nPraveen:\n','\n19:\n','\n552:\n')
+cseB=cseB('\nNaveen:\n','\n18:\n','\n553:\n')
+print(cseA.name);
+print(cseA.age);
+print(cseA.rollno);
+print(cseB.name);
+print(cseB.age);
+print(cseB.rollno);
+
