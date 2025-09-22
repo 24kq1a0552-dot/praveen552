@@ -14,7 +14,7 @@ class person:
           return age
 
 
-p1 = person("saikumar", "ongole",date(2006, 7, 3))
+p1 = person("praveen", "ongole",date(2006, 7, 3))
 
 print("calculated age for each person")
 print("******************************")
