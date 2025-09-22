@@ -1,0 +1,54 @@
+class ShoppingCart:
+    def __init__(self):
+        self.item=[]
+        
+    def add_item(self, item_name, qty):
+        item=(item_name,qty)
+        self.item.append(item)
+            
+    def remove_item(self, item_name):
+        for item in self.item:
+            if item[0] == item_name:
+                self.item.remove(item)
+                break
+
+    def calculate_total(self):
+        total = 0
+        for item in self.item:
+            total += item[1]
+        return total
+
+s = ShoppingCart()
+s.add_item("soap", 1)
+s.add_item("colgate", 1)
+s.add_item("brush", 2)
+
+print("Current Items in Cart:")
+for item in s.item:
+    print(item[0], "=", item[1])
+
+total_qty = s.calculate_total()
+print("Total Quantity:", total_qty)
+
+s.remove_item("Soap")
+print("\nUpdate Items in Cart aftter removing Colgate:")
+for item in s.item:
+    print(item[0], "_", item[1])
+total_qty = s.calculate_total()
+print("Total Quantity:", total_qty)
+            
+	 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+       
