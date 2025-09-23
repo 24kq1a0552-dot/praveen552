@@ -1,31 +1,28 @@
 class praveen():
-    def __init__(self,name,age,salary):
+    def __init__(self,name,age,salary,id):
         self.name=name
         self.age=age
         self.salary=salary
-
+        self.id=id
 class praveen1():
-    def __init__(self,name,age,salary):
+    def __init__(self,name,age,salary,id):
         self.name=name
         self.age=age
         self.salary=salary
+        self.id=id
 class praveen2():
-    def __init__(self,name,age,salary):
+    def __init__(self,name,age,salaryid):
         self.name=name
         self.age=age
         self.salary=salary
-class childpraveen1():
-    def __init__(self,name,age,salary):
+        self.id=id
+class childpraveen(praveen1,praveen2):
+    def __init__(self,name,age,salary,id):
         self.name=name
         self.age=age
         self.salary=salary
-class childpraveen2():
-    def __init__(self,name,age,salary):
-        self.name=name
-        self.age=age
-        self.salary=salary 
-
-praveen1=praveen("Praveen",19,345)
-praveen2=praveen("Naveen",20,234)
-print(praveen1.salary)
-print(praveen2.age)
+        self.id=id
+praveen1=praveen("Praveen",19,345,345678)
+praveen2=praveen("Naveen",20,234,876543)
+print(praveen1.id)
+print(praveen2.id)
