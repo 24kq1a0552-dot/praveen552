@@ -1,0 +1,20 @@
+from tkinter import *
+from tkinter.ttk import *
+
+from time import strftime
+
+root = Tk()
+root.title('CSE ACLOCK')
+
+def time():
+    string = strftime('%d:%M:%Y , %H:%M:%S: %p')
+    lbl.config(text=string)
+    lbl.after(300,time)
+    
+lbl = Label(root, font=('ARIAL', 30, 'bold'),
+            background='red',
+            foreground='violet')
+
+lbl.pack(anchor='center')
+time()
+mainloop()
