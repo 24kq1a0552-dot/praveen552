@@ -1,0 +1,28 @@
+class engineer():
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+class childengineer1(engineer):
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+class childenginer2(engineer):
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+eng1 = engineer('lakshman',18,50000)
+eng2 = engineer('ramu',19,100000)
+
+print(eng1.name)
+print(eng1.age)
+print(eng1.salary)
+
+print(eng2.name)
+print(eng2.age)
+print(eng2.salary)
