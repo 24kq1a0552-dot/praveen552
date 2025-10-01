@@ -3,7 +3,7 @@ class sbi:
          self.balance=0
          print("welcome to SBI")
      def deposit(self):
-         anount:float(input("enter amount to be the deposited:"))
+         amount:float(input("enter amount to be the deposited:"))
          self.balance+=amount
          print("\n Deposited amount :",amount)
      def withdraw(self):
